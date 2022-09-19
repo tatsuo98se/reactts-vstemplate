@@ -1,0 +1,22 @@
+{
+  "name": "reactts-vstemplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "all-install": "npm-run-all -p \"prefix:* -- install\"",
+    "all-test": "npm-run-all -s \"prefix:* -- test\"",
+    "all-build": "npm-run-all -s \"prefix:* -- run build\"",
+    "all-p": "npm-run-all -p \"run:* -- {@}\"",
+    "all-s": "npm-run-all -s \"run:* -- {@}\"",
+    "prefix:server": "npm --prefix ./server",
+    "prefix:client": "npm --prefix ./client",
+    "run:server": "npm --prefix ./server start",
+    "run:client": "npm --prefix ./client start"
+  },
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
